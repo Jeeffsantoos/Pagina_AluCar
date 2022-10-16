@@ -20,8 +20,8 @@
 
 <main>
     <section class="secao-fundo largura">
-        <div class="secao-fundo-transparente ">
-            <div class="largura secao-fundo-texto ">
+        <div class="secao-fundo-transparente">
+            <div class="largura secao-fundo-texto">
                 <h1>AluCar</h1>
                 <h2>Aluguel de Carros</h2>
             </div>
@@ -61,47 +61,61 @@
         </div>
         <div>
             <form class="conteudo-limitado" method="post" action="https://www.devmedia.com.br/codigos/formularios/aula9/">
-                <fieldset>
+                <fieldset class="secao-form">
                     <legend>Dados pessoais</legend>
-                    <div>
+                    <div class="secao-form-conteudo">
                         <label for="">Nome</label>
                         <input type="text" name="nome" required placeholder="digite seu nome">
                     </div>
-                    <div>
+                    <div class="secao-form-conteudo">
                         <label for="">Data de Nascimento</label>
                         <input type="date" name="data_nascimento" required>
                     </div>
-                    <div>
+                    <div class="secao-form-conteudo">
                         <label for="">Telefone</label>
                         <input type="tel" name="telefone" required placeholder="(XX) XXXXX-XXXX">
                     </div>
 
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="secao-form">
                     <legend>CNH</legend>
-                    <div>
+                    <div class="secao-form-conteudo">
                         <label for="">Número do Registro</label>
-                        <input type="number" name="cnh" placeholder="informe o seu número de registro " required>
+                        <input type="number" name="numero_registro" placeholder="informe o seu número de registro " required>
                     </div>
-                    <div>
+                    <div class="secao-form-conteudo">
                         <label for="">Validade</label>
                         <input type="date" name="validade" required>
                     </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="secao-form">
                     <legend>Carro</legend>
-                    <div>
+                    <div class="secao-form-conteudo">
                         <label for="">Modelo do Carro</label>
                         <select name="carro" required>
-                            <option value="">Selecione um carro</option>
-                            <option value="gol">Gol</option>
-                            <option value="uno">Fiat Uno</option>
+                            <option value="">Escolha um carro</option>
+                            <optgroup label="Volkswagem">
+                              <option value="gol">Gol</option>
+                              <option value="golf">Golf</option>
+                              <option value="fox">Fox</option>
+                            </optgroup>
+                            <optgroup label="Fiat">
+                              <option value="uno">Uno</option>
+                              <option value="siena">Siena</option>
+                              <option value="Palio">Palio</option>
+                            </optgroup>
+                            <optgroup label="Nissan">
+                              <option value="frontier">Frontier</option>
+                              <option value="versa">Versa</option>
+                              <option value="skyline">Skyline GT-R</option>
+                            </optgroup>
                         </select>
                     </div>
                 </fieldset>
 
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
